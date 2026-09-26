@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshGlow | Organic Moisture Cream</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">🌿 FreshGlow</div>
+    <nav>
+      <a href="#product">Product</a>
+      <a href="#ingredients">Ingredients</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#howto">How to Use</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="tag">ORGANIC SKINCARE</p>
+        <h1>FreshGlow Organic Moisture Cream</h1>
+        <p>Explore the FreshGlow product through an interactive digital experience.</p>
+        <a class="button" href="#product">Explore Product</a>
+      </div>
+      <div class="hero-card">
+        <img src="product-poster.jpg" alt="FreshGlow product">
+      </div>
+    </section>
+
+    <section id="product" class="section">
+      <h2>Explore the Product</h2>
+      <p class="subtitle">View the rotating product presentation.</p>
+      <div class="viewer">
+        <video controls autoplay muted loop playsinline poster="product-poster.jpg">
+          <source src="freshglow-product.mp4" type="video/mp4">
+          Your browser does not support video playback.
+        </video>
+      </div>
+      <div class="hotspots">
+        <button onclick="showInfo('ingredients')">🌿 Ingredients</button>
+        <button onclick="showInfo('benefits')">✨ Benefits</button>
+        <button onclick="showInfo('howto')">💧 How to Use</button>
+      </div>
+      <p id="info" class="info">Choose an option above to explore the product.</p>
+    </section>
+
+    <section id="ingredients" class="section cards">
+      <h2>Ingredients</h2>
+      <div class="card"><h3>🌿 Natural Extracts</h3><p>Designed around a clean, nature-inspired skincare concept.</p></div>
+      <div class="card"><h3>💧 Moisturising Care</h3><p>Created to present a fresh and moisturising product experience.</p></div>
+      <div class="card"><h3>🍃 Organic Theme</h3><p>Packaging and visuals follow an eco-friendly organic theme.</p></div>
+    </section>
+
+    <section id="benefits" class="section">
+      <h2>Benefits</h2>
+      <div class="benefit-grid">
+        <div>✨ Fresh-looking skin</div>
+        <div>💧 Moisture-focused care</div>
+        <div>🌿 Nature-inspired concept</div>
+        <div>♻️ Eco-friendly visual identity</div>
+      </div>
+    </section>
+
+    <section id="howto" class="section how">
+      <h2>How to Use</h2>
+      <ol>
+        <li>Clean your face gently.</li>
+        <li>Take a small amount of cream.</li>
+        <li>Apply evenly to the face.</li>
+        <li>Massage gently until absorbed.</li>
+      </ol>
+    </section>
+
+    <section class="cta">
+      <h2>Discover FreshGlow</h2>
+      <p>Scan the QR code to open this interactive product experience.</p>
+      <button onclick="alert('Buy Now button — connect this to your chosen product/store link.')">Buy Now</button>
+    </section>
+  </main>
+
+  <footer>FreshGlow Organic Skincare • Digital Product Experience</footer>
+  <script src="script.js"></script>
+</body>
+</html>
